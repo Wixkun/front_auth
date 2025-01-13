@@ -1,0 +1,85 @@
+body{
+    background-color: #b29d4e ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior : smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    border-radius: 30px;
+    box-shadow: 15px 15px 15px;
+}
+
+#logo_valocime{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icone{
+    width: 50px;
+    height: auto;
+}
+
+form{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 43%
+}
+
+form div{
+margin-top: 25px;
+}
+
+.input{
+    font-family: 'Poppins', sans-serif;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 10px;
+    padding-left: 5px;
+    width: 400px;
+}
+
+#center_bouton{
+    text-align: center;
+}
+
+.bouton{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border: 0;
+    background-color: #000;
+    border-radius: 35px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    width: 188px;
+    height: 38px;
+    transition: ease-in-out 0.3s;
+    box-shadow: inset 0 0 0 0 #b29d4e;
+
+}
+
+.bouton:hover{
+    box-shadow: inset 188px 0 0 0 #b29d4e;
+}
+

@@ -1,0 +1,106 @@
+body {
+    background-color: #b29d4e; 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #logo_valocime {
+    margin-top: -15%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #logo_valocime img {
+    width: 200px;
+    height: auto;
+  }
+
+  #zone_formulaire {
+    width: 100%;
+  }
+  
+  .input {
+    font-family: 'Poppins', sans-serif;
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease; 
+  }
+  
+  .input:focus {
+    border-color: #b29d4e;
+  }
+  
+  .bouton {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+  }
+  
+  .bouton:hover {
+    background-color: #b29d4e;
+    transform: scale(1.05); 
+  }
+  
+  #center_bouton {
+    text-align: center;
+    width: 100%;
+  }
+  
+  ::placeholder {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    #container {
+      width: 90%;
+      margin-top: 10%;
+    }
+  
+    .input {
+      font-size: 14px;
+    }
+  
+    .bouton {
+      font-size: 14px;
+    }
+  }
+  
