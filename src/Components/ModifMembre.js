@@ -15,7 +15,7 @@ const ModifMembre = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await API.get('/users/me');
+        const response = await API.get('/users');
         const currentUser = response.data;
 
         if (currentUser.role !== 'admin') {

@@ -10,7 +10,7 @@ const PageCollaborateur = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await API.get('/users/me');
+        const response = await API.get('/users');
         setUser(response.data);
       } catch (error) {
         console.error('Erreur lors de la récupération des informations utilisateur', error);

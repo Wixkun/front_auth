@@ -120,6 +120,7 @@ const RegisterForm = () => {
     >
       <option value="USER">Utilisateur</option>
       <option value="ADMIN">Administrateur</option>
+      <option value="BANNED">Banni</option>
     </select>
     <div id="center_bouton">
       <button className="bouton" type="submit">S'inscrire</button>
