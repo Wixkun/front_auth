@@ -10,7 +10,7 @@ const LoginForm = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('lien-api/login', { email, password });
+      const response = await axios.post('/login', { email, password });
       Cookies.set('authToken', response.data.token, { secure: true, sameSite: 'Strict' });
       alert('Connexion réussie');
     } catch (error) {

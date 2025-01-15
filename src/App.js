@@ -15,7 +15,14 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginForm />} />
-        <Route path="/register" element={<RegisterForm />} />
+        <Route 
+          path="/register" 
+          element={
+            <RequireAuth>
+              <RegisterForm />
+            </RequireAuth>
+        }
+        />
         <Route
           path="/membre"
           element={

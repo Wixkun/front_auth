@@ -23,7 +23,7 @@ const RegisterForm = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('lien-api/register', formData);
+      const response = await axios.post('/register', formData);
       console.log('Réponse de l\'API :', response.data);
       alert('Inscription réussie');
     } catch (error) {
@@ -31,6 +31,27 @@ const RegisterForm = () => {
       alert('Inscription échouée');
     }
   };
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const response = await API.get('/users');
+        const currentUser = response.data;
+
+        if (currentUser.role !== 'admin') {
+          navigate('/unauthorized');
+          return;
+        }
+
+        setUser(currentUser);
+      } catch (error) {
+        console.error('Erreur lors de la récupération des informations utilisateur', error);
+        navigate('/login');
+      }
+    };
+
+    fetchUser();
+  }, [navigate]);
 
   return (
     <div id="container">
